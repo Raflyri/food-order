@@ -8,4 +8,3 @@ $sql = mysqli_query($con, "SELECT * FROM wallet_details where wallet_id = $walle
 while($row1 = mysqli_fetch_array($sql)){
 $balance = $row1['balance'];
 }
-?>

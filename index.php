@@ -308,26 +308,20 @@ if ($_SESSION['customer_sid'] == session_id()) {
               <?php
               $result = mysqli_query($con, "SELECT * FROM items where not deleted;");
               while ($row = mysqli_fetch_array($result)) {
-                echo $row["id"] . ':{
-				min: 0,
-				max: 10
-				},
-				';
+                echo $row["id"] . ':{min: 0,max: 10},';
               }
               echo '},';
               ?>
+
               messages: {
                 <?php
                 $result = mysqli_query($con, "SELECT * FROM items where not deleted;");
                 while ($row = mysqli_fetch_array($result)) {
-                  echo $row["id"] . ':{
-				min: "Minimum 0",
-				max: "Maximum 10"
-				},
-				';
+                  echo $row["id"] . ':{	min:"Minimum 0",max:"Maximum 10"},';
                 }
                 echo '},';
                 ?>
+
                 errorElement: 'div',
                 errorPlacement: function(error, element) {
                   var placement = $(element).data('error');

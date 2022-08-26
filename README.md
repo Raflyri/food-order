@@ -1,2 +1,2 @@
 # food-order
- Skripsi Randy
+ Skripsi
