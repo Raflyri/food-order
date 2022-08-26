@@ -221,7 +221,7 @@ if ($_SESSION['admin_sid'] == session_id()) {
                           <th data-field="price">Role</th>
                           <th data-field="price">Verified</th>
                           <th data-field="price">Enable</th>
-                          <th data-field="price">Wallet</th>
+                          <!--th data-field="price">Wallet</th-->
                         </tr>
                       </thead>
 
@@ -254,7 +254,7 @@ if ($_SESSION['admin_sid'] == session_id()) {
                               $balance = $row2['balance'];
                             }
                           }
-                          echo '<td><label for="balance">Balance</label><input id="balance" name="' . $row['id'] . '_balance" value="' . $balance . '" type="number" data-error=".errorTxt01"><div class="errorTxt01"></div></td></tr>';
+                          /**echo '<td><label for="balance">Balance</label><input id="balance" name="' . $row['id'] . '_balance" value="' . $balance . '" type="number" data-error=".errorTxt01"><div class="errorTxt01"></div></td></tr>';*/
                         }
                         ?>
                       </tbody>

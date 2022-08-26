@@ -313,12 +313,9 @@ if ($_SESSION['admin_sid'] == session_id()) {
     </footer>
     <!-- END FOOTER -->
 
-
-
     <!-- ================================================
     Scripts
     ================================================ -->
-
 
     <!-- jQuery Library -->
     <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
